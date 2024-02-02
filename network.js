@@ -79,7 +79,9 @@ var edges = new vis.DataSet([
     {from: 9, to: 31, arrows:{to:{enabled: true}, from:{enabled: true}}}, // Dune <-> Sandland
     // Failure
     {from: 10, to: 19, arrows:{to:{enabled: true}, from:{enabled: true}}}, // Failure <-> Laboratory
-    // Fidelity (Far Below omitted - all connections exhausted)
+    // Far Below
+    {from: 11, to: 34, arrows:{to:{enabled: true}}}, // Far Below -> Tievel
+    // Fidelity
     {from: 12, to: 14, arrows:{to:{enabled: true}}}, // Fidelity -> Garden
     // Frigid
     {from: 13, to: 21, arrows:{to:{enabled: true}, from:{enabled: true}}}, // Frigid <-> Northtorn
