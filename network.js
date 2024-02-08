@@ -121,7 +121,6 @@ var raw_edges = [
     {from: 24, to: 40, arrows:{to:{enabled: true}}}, // Outskirts -> Vein
     // Preserve (Paradoxical, Patience, Patients omitted)
     {from: 28, to: 1, arrows:{to:{enabled: true}}}, // Preserve -> Beach House
-    {from: 28, to: 38, arrows:{to:{enabled: dual}, from:{enabled: dual}}}, // Preserve <-> The Woods
     // Sandland (Public Urinal, Punishment Corner omitted)
     {from: 31, to: 32, arrows:{to:{enabled: dual}, from:{enabled: dual}}}, // Sandland <-> Shoreline
     {from: 31, to: 39, arrows:{to:{enabled: dual}, from:{enabled: dual}}}, // Sandland <-> Tomb
@@ -133,8 +132,9 @@ var raw_edges = [
     {from: 35, to: 37, arrows:{to:{enabled: dual}, from:{enabled: dual}}}, // The Mist <-> The Silence 
     // The Woods (The Room, The Silence omitted)
     {from: 38, to: 3, arrows:{to:{enabled: true}}}, // The Woods -> Cavern
+    {from: 38, to: 28, arrows:{to:{enabled: true}}}, // The Woods -> Preserve
     // Vein (Tomb omitted)
-    {from: 40, to: 17, arrows:{to:{enabled: true}}}, // The Woods -> Cavern
+    {from: 40, to: 17, arrows:{to:{enabled: true}}}, // Vein -> Hospital
     // Woods II (Void omitted)
     {from: 42, to: 36, arrows:{to:{enabled: true}}}, // Woods II -> The Room
 ]
