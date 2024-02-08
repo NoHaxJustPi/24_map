@@ -140,7 +140,11 @@ var raw_edges = [
 ]
 
 if (settings.get('teivel') == 'false') {
-    raw_edges.splice(47, 1) // increase the 47 if items are added before Exit Teivel
+    for (let i = 0; i < raw_edges.length; i++) {
+        if (raw_edges[i].from == 34 && raw_edges[i].to == 26) {
+            raw_edges.splice(i, 1)
+        }
+    }
 }
 
 edges = new vis.DataSet(raw_edges)
