@@ -6,17 +6,17 @@
       type="text/javascript"
       src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
     ></script>
-    <style type="text/css">
-      #mynetwork {
-        width: 99vw;
-        height: 99vh;
-        border: 1px solid lightgray;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="mynetwork"></div>
-    <script type="text/javascript" src="network.js">
-    </script>
+    <div class="flex-container">
+      <div id="settings_box" class="flex-child">
+        <button id="hider" onclick="toggle()">◀</button>
+        <div id="settings_container" style="display:block"><div id="settings"></div></div>
+      </div>
+      <div id="network" class="flex-child"></div>
+    </div>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="network.js"></script>
   </body>
 </html>

@@ -1,0 +1,25 @@
+#network {
+    z-index: 0;
+    border: 1px solid gray;
+    flex-grow: 1;
+}
+
+#settings_box {
+    border: 1px solid gray;
+    z-index: 1;
+    width: min-content;
+    flex-grow: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 95vh
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
